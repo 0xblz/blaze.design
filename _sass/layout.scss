@@ -1,0 +1,28 @@
+// reset
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $dark-gray;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include responsive(mobile) {
+        background: rgba(white,0.05);
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: $tablet;
+    padding: 2rem;
+}

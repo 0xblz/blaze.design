@@ -1,0 +1,27 @@
+// defaults
+body {
+    font-family: $sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: 400;
+    color: white;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}

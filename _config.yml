@@ -1,0 +1,9 @@
+title: blaze / 0xblz.eth
+description: >- # this means to ignore newlines until "baseurl:"
+  designer
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
