@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     line-height: 1em;
     font-weight: 400;
-    color: white;
+    color: $primary
 }
 
 // line-height adjustments
@@ -17,7 +17,10 @@ h5 {
     line-height: 1.4em;
 }
 
-// heading sizes
+// font sizes
+p {
+    font-size: 20px;
+}
 h1 {
     font-size: 32px;
 }
@@ -26,4 +29,21 @@ h2 {
 }
 h3 {
     font-size: 18px;
+}
+small {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+// links
+
+a {
+    transition: all ease-in-out 0.15s;
+    text-decoration: none;
+    color: $primary;
+    font-weight: 700;
+    &:hover,
+    &:active {
+        color: rgba($primary,0.4);
+    }
 }
