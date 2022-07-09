@@ -14,7 +14,7 @@ html {
 // defaults
 body {
     overflow-x: hidden;
-    background-color: $primary;
+    background: linear-gradient(180deg, $primary-soft 0%, $secondary-soft 100%);
 }
 
 // html5 layout
@@ -22,7 +22,6 @@ main {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, $primary-soft 0%, $secondary-soft 100%);
     @include responsive(tablet) {
         height: auto;
         flex-direction: column;
@@ -171,4 +170,15 @@ section {
     &:hover {
         background: $primary; 
     }
+}
+
+// canvas
+canvas {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%!important;
+    height: 100%!important;
+    z-index: -1;
 }
