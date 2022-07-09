@@ -26,21 +26,21 @@ p {
 }
 h1 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     @include responsive(mobile){
         font-size: 22px;
     }
 }
 h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     @include responsive(mobile){
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 small {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 // links
@@ -49,7 +49,7 @@ a {
     transition: all ease-in-out 0.15s;
     text-decoration: none;
     color: $primary;
-    font-weight: 700;
+    font-weight: 500;
     &:hover,
     &:active {
         color: rgba($primary,0.4);
