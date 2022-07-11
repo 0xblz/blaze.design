@@ -42,56 +42,13 @@ section {
     @include responsive(mobile) {
         padding: 1.5rem;
     }
-    & > header {
+    & > header,
+    & > footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
         flex-wrap: wrap;
-    }
-    & > footer {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        article {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            & > header {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                img {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                }
-            }
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-                padding-left: 1rem;
-                @include responsive(tablet) {
-                    padding-left: 0.5rem;
-                }
-                li {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.5rem;
-                    &:before {
-                        content: "";
-                        height: 1.5rem;
-                        width: 1.5rem;
-                        display: block;
-                        background-image: url(../img/seagull.svg);
-                        background-size: cover;
-                    }
-                }
-                span {
-                    opacity: 0.6;
-                }
-            }
-        }
     }
 }
 
@@ -110,6 +67,24 @@ section {
         width: 100%;
         height: auto;
         background: $primary;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba($primary,0.4);
+        &:hover,
+        &:active {
+            transform: translateY(-1rem);
+        }
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2rem;
+            color: white;
+            background: linear-gradient(to top, $primary 0%, rgba($primary,0) 100%);
+            width: 100%;
+            border-radius: 1rem;
+        }
         img {
             height: 100%;
             width: 100%;
@@ -148,10 +123,6 @@ section {
         background-color: rgba($primary,0.1);
         border-radius: 9999px;
         text-decoration: none;
-        img {
-            width: 1rem;
-            height: 1rem;
-        }
         &:hover,
         &:active {
             color: $primary;
