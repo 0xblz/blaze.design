@@ -74,7 +74,7 @@ section {
         box-shadow: 0 0.5rem 1rem rgba($primary,0.4);
         &:hover,
         &:active {
-            transform: translateY(-1rem);
+            transform: translateY(-0.25rem) scale(1.05);
         }
         span {
             position: absolute;
@@ -85,6 +85,15 @@ section {
             background: linear-gradient(to top, $primary 0%, rgba($primary,0) 100%);
             width: 100%;
             border-radius: 1rem;
+        }
+        i {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem;
+            background-color: rgba(white,0.8);
+            color: $primary;
+            border-radius: 100%;
         }
         img {
             height: 100%;
@@ -130,10 +139,6 @@ section {
             background-color: $secondary;
         }
     }
-}
-.title {
-    display: flex;
-    flex-shrink: 0;
 }
 
 // scrollbar
