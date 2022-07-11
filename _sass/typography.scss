@@ -37,6 +37,9 @@ h2 {
     @include responsive(mobile){
         font-size: 20px;
     }
+    span {
+        color: $secondary;
+    }
 }
 small {
     font-size: 12px;
@@ -52,6 +55,6 @@ a {
     font-weight: 500;
     &:hover,
     &:active {
-        color: rgba($primary,0.4);
+        color: $secondary;
     }
 }

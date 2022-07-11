@@ -126,8 +126,8 @@ section {
         text-decoration: none;
         &:hover,
         &:active {
-            color: $primary;
-            background-color: rgba(white,0.5);
+            color: white;
+            background-color: $secondary;
         }
     }
 }
@@ -158,5 +158,4 @@ canvas {
     left: 0;
     width: 100%!important;
     height: 100%!important;
-    // z-index: -1;
 }
