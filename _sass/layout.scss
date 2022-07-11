@@ -14,7 +14,7 @@ html {
 // defaults
 body {
     overflow-x: hidden;
-    background-color: $secondary-soft;
+    background: linear-gradient(180deg, $primary-soft 0%, $secondary-soft 100%);
 }
 
 // html5 layout
