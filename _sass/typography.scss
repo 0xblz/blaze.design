@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     line-height: 1em;
     font-weight: 400;
-    color: $primary
+    color: rgba(white,0.75)
 }
 
 // line-height adjustments
@@ -38,7 +38,7 @@ h2 {
         font-size: 20px;
     }
     span {
-        color: $secondary;
+        color: $primary;
     }
 }
 small {
@@ -51,10 +51,10 @@ small {
 a {
     transition: all ease-in-out 0.15s;
     text-decoration: none;
-    color: $primary;
+    color: white;
     font-weight: 500;
     &:hover,
     &:active {
-        color: $secondary;
+        color: $primary;
     }
 }

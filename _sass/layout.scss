@@ -7,14 +7,14 @@ html {
 }
 
 ::selection { 
-    background: $secondary-soft;
-    color: $secondary;
+    background: rgba(white,0.1);
+    color: $primary;
 }
 
 // defaults
 body {
     overflow-x: hidden;
-    background: linear-gradient(180deg, $primary-soft 0%, $secondary-soft 100%);
+    background: $dark-gray;
 }
 
 // html5 layout
@@ -71,7 +71,7 @@ section {
         position: relative;
         overflow: hidden;
         border-radius: 1rem;
-        box-shadow: 0 0.5rem 1rem rgba($primary,0.4);
+        // box-shadow: 0 0.5rem 1rem rgba($primary,0.4);
         &:hover,
         &:active {
             transform: translateY(-0.25rem) scale(1.05);
@@ -130,13 +130,13 @@ section {
         align-items: center;
         gap: 0.25rem;
         padding: 0.5rem;
-        background-color: rgba($primary,0.1);
+        background-color: rgba(white,0.1);
         border-radius: 9999px;
         text-decoration: none;
         &:hover,
         &:active {
-            color: white;
-            background-color: $secondary;
+            color: $dark-gray;
+            background-color: white;
         }
     }
 }
@@ -146,12 +146,12 @@ section {
     width: 0.5rem;
 }
 ::-webkit-scrollbar-track {
-    background: $secondary-soft; 
+    background: rgba(white,0.1); 
 }
 ::-webkit-scrollbar-thumb {
-    background: $secondary;
+    background: $primary;
     &:hover {
-        background: $primary; 
+        background: white; 
     }
 }
 
