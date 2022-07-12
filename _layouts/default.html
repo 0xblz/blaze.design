@@ -17,7 +17,15 @@
             {{ content }}
         </main>
         <script type="module" src="../script.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-355V4GHGSF"></script>
         <script type="text/javascript">
+          // analytics 
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-355V4GHGSF');
+
           // instafeed
           var feed = new Instafeed({
             accessToken: 'IGQVJYSENQeUNtS18yaFA0TVdaR2xXU0RuWDhUeHd0cEllcGlpMkFET1BsaWdBRGZAGRXh1czFyZAFUzSDJXczY2OHl1anduUlAwcVJCSktrOE5teVRlbTN1U1U1Y2ZAWX2RmdHJwLTdOMnVLVWNrVWtsWQZDZD',
@@ -26,5 +34,6 @@
           });
           feed.run();
         </script>
+        
 	</body>
 </html>
