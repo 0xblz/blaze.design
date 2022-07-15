@@ -149,7 +149,8 @@ section {
     background: rgba(white,0.1); 
 }
 ::-webkit-scrollbar-thumb {
-    background: $primary;
+    background: rgba(white,0.2);
+    border-radius: 999px;
     &:hover {
         background: white; 
     }
