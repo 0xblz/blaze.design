@@ -71,7 +71,6 @@ section {
         position: relative;
         overflow: hidden;
         border-radius: 1rem;
-        // box-shadow: 0 0.5rem 1rem rgba($primary,0.4);
         &:hover,
         &:active {
             transform: translateY(-0.25rem) scale(1.05);
@@ -146,10 +145,10 @@ section {
     width: 0.5rem;
 }
 ::-webkit-scrollbar-track {
-    background: rgba(white,0.1); 
+    background: rgba($secondary,0.1); 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(white,0.2);
+    background: $primary;
     border-radius: 999px;
     &:hover {
         background: white; 
