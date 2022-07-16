@@ -25,6 +25,9 @@ p {
     @include width(mobile){
         font-size: 16px;
     }
+    @include width(watch) {
+        font-size: 12px;
+    }
 }
 h1 {
     color: white;
@@ -33,6 +36,9 @@ h1 {
     @include width(mobile){
         font-size: 22px;
     }
+    @include width(watch) {
+        font-size: 16px;
+    }
 }
 h2 {
     font-size: 22px;
@@ -40,13 +46,19 @@ h2 {
     @include width(mobile){
         font-size: 20px;
     }
+    @include width(watch) {
+        font-size: 14px;
+    }
     span {
         color: $primary;
     }
 }
 small {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
+    @include width(watch) {
+        font-size: 10px;
+    }
 }
 
 // links
