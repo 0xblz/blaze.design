@@ -1,5 +1,5 @@
 // responsive sizes
-@mixin responsive($size) {
+@mixin width($size) {
     @if $size == mobile {
       @media (max-width: $mobile) { @content; }
     } 
