@@ -148,10 +148,10 @@ section {
     background: rgba($secondary,0.1); 
 }
 ::-webkit-scrollbar-thumb {
-    background: $primary;
+    background: $secondary;
     border-radius: 999px;
     &:hover {
-        background: white; 
+        background: $primary; 
     }
 }
 
