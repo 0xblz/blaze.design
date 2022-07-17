@@ -43,10 +43,6 @@ section {
     @include width(mobile) {
         padding: 1.5rem;
     }
-    @include width(watch) {
-        padding: 1rem;
-        gap: 1rem;
-    }
     aside {
         display: flex;
         justify-content: space-between;
@@ -66,9 +62,6 @@ section {
     -webkit-overflow-scrolling: touch;
     @include width(tablet) {
         max-width: 100%;
-    }
-    @include width(watch) {
-        gap: 1rem;
     }
     a {
         display: flex;
@@ -93,9 +86,6 @@ section {
             background: linear-gradient(to top, $primary 0%, rgba($primary,0) 100%);
             width: 100%;
             border-radius: 1rem;
-            @include width(watch) {
-                padding: 1rem;
-            }
         }
         i {
             position: absolute;
@@ -130,6 +120,7 @@ section {
             border-radius: 100%;
             height: 3rem;
             width: 3rem;
+            border: 2px solid rgba(white,0.1);
             @include width(mobile){
                 height: 2rem;
                 width: 2rem;
