@@ -1,37 +1,27 @@
 <!doctype html>
 <html lang="en">
 {% include head.html %}
-	<body>
-        <!--canvas id="canvas3d"></canvas>
-        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-        <script type="importmap">
-        {
-            "imports": {
-            "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.75/build/runtime.js"
-            }
-        }
-        </script-->		
-        <main>
-            {{ content }}
-        </main>
-        <script type="module" src="../script.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-355V4GHGSF"></script>
-        <script type="text/javascript">
-          // analytics 
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+	<body>	
+      <main>
+          {{ content }}
+      </main>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-355V4GHGSF"></script>
+      <script type="text/javascript">
+        // analytics 
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-          gtag('config', 'G-355V4GHGSF');
+        gtag('config', 'G-355V4GHGSF');
 
-          // instafeed
-          var feed = new Instafeed({
-            accessToken: 'IGQVJYSENQeUNtS18yaFA0TVdaR2xXU0RuWDhUeHd0cEllcGlpMkFET1BsaWdBRGZAGRXh1czFyZAFUzSDJXczY2OHl1anduUlAwcVJCSktrOE5teVRlbTN1U1U1Y2ZAWX2RmdHJwLTdOMnVLVWNrVWtsWQZDZD',
-            limit: 12,
-            template: '<a href="{% raw %}{{link}}{% endraw %}" target="_blank"><i class="fa-brands fa-instagram"></i><span><p>{% raw %}{{caption}}{% endraw %}</p></span><img title="{% raw %}{{caption}}{% endraw %}" src="{% raw %}{{image}}{% endraw %}" /></a>'
-          });
-          feed.run();
-        </script>
-        
+        // instafeed
+        var feed = new Instafeed({
+          accessToken: 'IGQVJYSENQeUNtS18yaFA0TVdaR2xXU0RuWDhUeHd0cEllcGlpMkFET1BsaWdBRGZAGRXh1czFyZAFUzSDJXczY2OHl1anduUlAwcVJCSktrOE5teVRlbTN1U1U1Y2ZAWX2RmdHJwLTdOMnVLVWNrVWtsWQZDZD',
+          limit: 12,
+          template: '<a href="{% raw %}{{link}}{% endraw %}" target="_blank"><i class="fa-brands fa-instagram"></i><span><p>{% raw %}{{caption}}{% endraw %}</p></span><img title="{% raw %}{{caption}}{% endraw %}" src="{% raw %}{{image}}{% endraw %}" /></a>'
+        });
+        feed.run();
+      </script>
+      
 	</body>
 </html>
