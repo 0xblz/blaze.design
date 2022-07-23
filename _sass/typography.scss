@@ -55,7 +55,7 @@ h2 {
 }
 small {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     @include width(watch) {
         font-size: 10px;
     }
