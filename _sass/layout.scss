@@ -132,10 +132,6 @@ section {
             height: 3rem;
             width: 3rem;
             border: 2px solid rgba(white,0.1);
-            @include width(mobile){
-                height: 2rem;
-                width: 2rem;
-            }
         }
     }
     .address {

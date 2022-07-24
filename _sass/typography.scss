@@ -72,14 +72,4 @@ a {
     &:active {
         color: $secondary;
     }
-    svg {
-        transition: all ease-in-out 0.15s;
-        fill: white;
-        height: 1rem;
-        width: auto;
-        &:hover,
-        &:active {
-            fill: $primary;
-        }
-    }
 }
