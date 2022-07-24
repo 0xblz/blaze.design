@@ -22,7 +22,6 @@ main {
     display: flex;
     width: 100vw;
     height: 100vh;
-    box-shadow: inset 0 0 10rem rgba($primary,0.1);
     @include width(tablet) {
         flex-direction: column;
     }
@@ -34,7 +33,7 @@ section {
     justify-content: space-between;
     flex-shrink: 0;
     gap: 2rem;
-    padding: 4rem;
+    padding: 2rem;
     overflow-y: auto;
     overflow-x: visible;
     flex: 1;
@@ -53,6 +52,11 @@ section {
         gap: 2rem;
         flex-wrap: wrap;
         z-index: 9;
+        padding: 2rem;
+        background: rgba($dark-gray,0.3);
+        border-radius: 2rem;
+        -webkit-backdrop-filter: blur(0.5rem);
+        backdrop-filter: blur(0.5rem);
     }
 }
 
@@ -166,9 +170,10 @@ section {
 // canvas
 canvas {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%!important;
     height: 100%!important;
+    // z-index: -1;
 }

@@ -32,7 +32,7 @@ p {
 h1 {
     color: white;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     @include width(mobile){
         font-size: 22px;
     }
@@ -55,7 +55,7 @@ h2 {
 }
 small {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     @include width(watch) {
         font-size: 10px;
     }
