@@ -52,19 +52,14 @@ section {
         gap: 2rem;
         flex-wrap: wrap;
         z-index: 9;
-        padding: 2rem;
-        border-radius: 2rem;
-        background: rgba($dark-gray,0.3);
-        -webkit-backdrop-filter: blur(0.5rem);
-        backdrop-filter: blur(0.5rem);
     }
 }
 
 // custom
 .instafeed {
     transition: all 0.25s ease-in-out;
-    background: rgba($dark-gray,0.6);
-    -webkit-backdrop-filter: blur(2rem);
+    background: rgba($dark-gray,0.3);
+    -webkit-backdrop-filter: blur(0.5rem);
     backdrop-filter: blur(0.5rem);
     justify-content: flex-start;
     gap: 2rem;
