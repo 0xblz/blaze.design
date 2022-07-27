@@ -20,11 +20,8 @@ body {
 // html5 layout
 main {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    padding: 3rem;
     @include width(tablet) {
         flex-direction: column;
     }
@@ -32,15 +29,86 @@ main {
 
 section {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-    z-index: 9;
+    flex-shrink: 0;
+    gap: 2rem;
+    padding: 2rem;
+    overflow-y: auto;
+    overflow-x: visible;
+    flex: 1;
+    position: relative;
+    @include width(tablet) {
+        padding: 2rem;
+        flex: none;
+    }
+    @include width(mobile) {
+        padding: 1.5rem;
+    }
+    aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        z-index: 9;
+    }
 }
 
 // custom
+.instafeed {
+    transition: all 0.25s ease-in-out;
+    background: rgba($dark-gray,0.3);
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
+    justify-content: flex-start;
+    gap: 2rem;
+    max-width: 25%;
+    z-index: 9;
+    -webkit-overflow-scrolling: touch;
+    @include width(tablet) {
+        max-width: 100%;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 100%;
+        height: auto;
+        background: $primary;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        &:hover,
+        &:active {
+            transform: translateY(-0.25rem) scale(1.05);
+        }
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2rem;
+            color: white;
+            background: linear-gradient(to top, $primary 0%, rgba($primary,0) 100%);
+            width: 100%;
+            border-radius: 1rem;
+        }
+        i {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem;
+            background-color: black;
+            color: white;
+            border-radius: 100%;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
 .profile {
     display: flex;
     flex-wrap: wrap;
